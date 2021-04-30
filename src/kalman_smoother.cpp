@@ -39,7 +39,7 @@ public:
 };
 
 int main(int argc, char* argv[]) {
-    auto A = (gtsam::Matrix(2,2) << 1, 0.1, 1, 0).finished();
+    auto A = (gtsam::Matrix(2,2) << 1, 0.1, 0, 1).finished();
     auto B = (gtsam::Matrix(2,1) << 0, 1).finished();
     auto C = (gtsam::Matrix(1,2) << 1, 0).finished();
     auto u = 0.1;
